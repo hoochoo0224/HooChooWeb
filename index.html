@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HooChoo</title>
+
+    <style>
+        body{
+            background-image: url("후추.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #nav{
+            list-style: none;
+            height: 40px;
+            padding: 5px 1px;
+            margin: 0;
+            background: #f29c74;
+        }
+        #nav li{
+            float: left;
+            position: relative;
+            margin: 5px 30px;
+            padding: 0;
+        }
+        #nav li a{
+            display: block;
+            font-family: "굴림";
+            font-weight: bold;
+            font-size: 18px;
+            padding: 7px 8px;
+            margin: 0;
+            color: #fff;
+            margin: 0;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        }
+        #nav li:hover > a{
+            background: #ffcab2;
+            color: black;
+            margin: 0;
+            padding: 5px;
+        }
+        #nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 105px;
+            background: #ffcab2;
+            text-align: center;
+            opacity: 0;
+        }
+        #nav li:hover ul{
+            opacity: 1;
+        }
+        #nav li:hover ul li{
+            height: 35px;
+            overflow: visible;
+            padding: 0;
+        }
+        #nav ul li{
+            float: none;
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+        #nav ul a{
+            font-weight: normal;
+            color: black;
+        }
+        #nav ul li:hover > a{
+            background: #cc9882;
+            font-weight: bold;
+        }
+        .title{
+            text-align: center;
+        }
+        .title span{
+            font-size: 45px;
+            color: orange;
+            display: inline-block;
+        }
+        .scrollBar{
+            overflow:auto;
+            width:500px;
+            height:150px;
+        }
+        .search{
+            height: 40px;
+            width: 400px;
+            border: 1px solid #1b5ac2;
+            background: #ffffff;
+        }
+        .search_{
+            font-size: 16px;
+            width: 325px;
+            padding: 10px;
+            border: 0px;
+            outline: none;
+            float: left;
+        }
+        .btn{
+            width: 50px;
+            height: 100%;
+            border: 0px;
+            background: #1b5ac2;
+            outline: none;
+            float: right;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <ul id="nav">
+        <li><a href="index.html">HooChoo</a></li>
+        <li><a href="Introduction.html">후추 소개</a></li>
+        <li><a href="Picture.html">후추 사진</a></li>
+        <li><a href="Video.html">후추 영상</a></li>
+        <li><a href="Other.html">기타</a>
+            <ul>
+                <li><a href="#">게임</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1 class="title"><span>HooChoo</span></h1>
+    
+    <div class="search">
+        <input type="text" placeholder="검색" class="search_">
+        <button class="btn">검색</button>
+    </div>
+
+    <p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+
+    <div class="scrollBar"></div>
+</body>
+</html>

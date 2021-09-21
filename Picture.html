@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HooChoo</title>
+
+    <style>
+        body{
+            /* background-image: url("후추3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: #ffe0ff;
+        }
+        #nav{
+            list-style: none;
+            height: 40px;
+            padding: 5px 1px;
+            margin: 0;
+            background: #f29c74;
+        }
+        #nav li{
+            float: left;
+            position: relative;
+            margin: 5px 30px;
+            padding: 0;
+        }
+        #nav li a{
+            display: block;
+            font-family: "굴림";
+            font-weight: bold;
+            font-size: 18px;
+            padding: 7px 8px;
+            margin: 0;
+            color: #fff;
+            margin: 0;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        }
+        #nav li:hover > a{
+            background: #ffcab2;
+            color: black;
+            margin: 0;
+            padding: 5px;
+        }
+        #nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 105px;
+            background: #ffcab2;
+            text-align: center;
+            opacity: 0;
+        }
+        #nav li:hover ul{
+            opacity: 1;
+        }
+        #nav li:hover ul li{
+            height: 35px;
+            overflow: visible;
+            padding: 0;
+        }
+        #nav ul li{
+            float: none;
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+        #nav ul a{
+            font-weight: normal;
+            color: black;
+        }
+        #nav ul li:hover > a{
+            background: #cc9882;
+            font-weight: bold;
+        }
+        .title{
+            text-align: center;
+        }
+        .title span{
+            font-size: 45px;
+            color: orange;
+            display: inline-block;
+        }
+        .scrollBar{
+            overflow:auto;
+            width:500px;
+            height:150px;
+        }
+        .line1{
+            width: 100%;
+            height: 100%;
+            border: 5px solid #C9C9C9;
+            text-align: center;
+        }
+        .line2{
+            width: 100%;
+            height: 100%;
+            border: 5px solid #C9C9C9;
+            text-align: center;
+        }
+        .line3{
+            width: 100%;
+            height: 100%;
+            border: 5px solid #C9C9C9;
+            text-align: center;
+        }
+        .download{
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            color: black;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul id="nav">
+        <li><a href="index.html">HooChoo</a></li>
+        <li><a href="Introduction.html">후추 소개</a></li>
+        <li><a href="Picture.html">후추 사진</a></li>
+        <li><a href="Video.html">후추 영상</a></li>
+        <li><a href="Other.html">기타</a>
+            <ul>
+                <li><a href="#">게임</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1 class="title"><span>후추 사진</span></h1>
+
+    <br /><br />
+    <a href="Images/후추.jpg" download=""><button class="download">다운로드</button></a>
+    <br /><br />
+
+    <div class="line1">
+        <img src="후추16.jpg" width="300" alt="">
+        <img src="후추.jpg" width="300" alt="">
+        <img src="후추4.jpg" width="300" alt="">
+        <img src="후추5.jpg" width="300" alt="">
+    </div>
+    <div class="line2">
+        <img src="후추7.jpg" width="300" alt="">
+        <img src="후추10.jpg" width="300" alt="">
+        <img src="후추18.jpg" width="300" alt="">
+        <img src="후추19.jpg" width="300" alt="">
+    </div>
+    <div class="line2">
+        <img src="후추13.jpg" width="300" alt="">
+        <img src="후추6.jpg" width="300" alt="">
+        <img src="후추3.jpg" width="300" alt="">
+        <img src="후추8.jpg" width="300" alt="">
+    </div>
+    <div class="line2">
+        <img src="후추11.jpg" width="300" alt="">
+        <img src="후추9.jpg" width="300" alt="">
+        <img src="후추12.jpg" width="300" alt="">
+        <img src="후추14.jpg" width="300" alt="">
+    </div>
+    <div class="line3">
+        <img src="후추2.jpg" width="300" alt="">
+        <img src="후추15.jpg" width="300" alt="">
+        <img src="후추17.jpg" width="300" alt="">
+    </div>
+
+    <div class="scrollBar"></div>
+</body>
+</html>
