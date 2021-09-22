@@ -7,91 +7,186 @@
     <title>HooChoo</title>
 
     <style>
-        body{
-            background-image: url("후추2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+        @import url("main.css") only screen and (min-width:200px) and (max-width:480px);
+
+        @media (max-width: 767px){
+            body{
+                background-image: url("후추19.jpg");
+                background-repeat: no-repeat;
+                background-position: -10px 0px;
+                background-size: 450px;
+                background-color: #ddffff;
+            }
+            #nav{
+                list-style: none;
+                height: 30px;
+                padding: 5px 1px;
+                margin: 0;
+                background: #f29c74;
+            }
+            #nav li{
+                float: left;
+                position: relative;
+                margin: 1px 5px;
+                padding: 0;
+            }
+            #nav li a{
+                display: block;
+                font-family: "굴림";
+                font-weight: bold;
+                font-size: 11px;
+                padding: 7px 4px;
+                margin: 0;
+                color: #fff;
+                margin: 0;
+                text-decoration: none;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            }
+            #nav li:hover > a{
+                background: #ffcab2;
+                color: black;
+                margin: 0;
+                padding: 5px;
+            }
+            #nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                width: 105px;
+                background: #ffcab2;
+                text-align: center;
+                opacity: 0;
+            }
+            #nav li:hover ul{
+                opacity: 1;
+            }
+            #nav li:hover ul li{
+                height: 35px;
+                overflow: visible;
+                padding: 0;
+            }
+            #nav ul li{
+                float: none;
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+            }
+            #nav ul a{
+                font-weight: normal;
+                color: black;
+            }
+            #nav ul li:hover > a{
+                background: #cc9882;
+                font-weight: bold;
+            }
+            .title{
+                text-align: center;
+            }
+            .title span{
+                font-size: 45px;
+                color: orange;
+                display: inline-block;
+            }
+            .scrollBar{
+                overflow:auto;
+                width:500px;
+                height:150px;
+            }
+            .introduction{
+                text-align: center;
+            }
         }
-        #nav{
-            list-style: none;
-            height: 40px;
-            padding: 5px 1px;
-            margin: 0;
-            background: #f29c74;
-        }
-        #nav li{
-            float: left;
-            position: relative;
-            margin: 5px 30px;
-            padding: 0;
-        }
-        #nav li a{
-            display: block;
-            font-family: "굴림";
-            font-weight: bold;
-            font-size: 18px;
-            padding: 7px 8px;
-            margin: 0;
-            color: #fff;
-            margin: 0;
-            text-decoration: none;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-        }
-        #nav li:hover > a{
-            background: #ffcab2;
-            color: black;
-            margin: 0;
-            padding: 5px;
-        }
-        #nav ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            left: 0;
-            top: 40px;
-            width: 105px;
-            background: #ffcab2;
-            text-align: center;
-            opacity: 0;
-        }
-        #nav li:hover ul{
-            opacity: 1;
-        }
-        #nav li:hover ul li{
-            height: 35px;
-            overflow: visible;
-            padding: 0;
-        }
-        #nav ul li{
-            float: none;
-            margin: 0;
-            padding: 0;
-            font-size: 10px;
-        }
-        #nav ul a{
-            font-weight: normal;
-            color: black;
-        }
-        #nav ul li:hover > a{
-            background: #cc9882;
-            font-weight: bold;
-        }
-        .title{
-            text-align: center;
-        }
-        .title span{
-            font-size: 45px;
-            color: orange;
-            display: inline-block;
-        }
-        .scrollBar{
-            overflow:auto;
-            width:500px;
-            height:150px;
-        }
-        .introduction{
-            text-align: center;
+
+        @media (min-width: 1200px) {
+            body{
+                background-image: url("후추2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #nav{
+                list-style: none;
+                height: 40px;
+                padding: 5px 1px;
+                margin: 0;
+                background: #f29c74;
+            }
+            #nav li{
+                float: left;
+                position: relative;
+                margin: 5px 30px;
+                padding: 0;
+            }
+            #nav li a{
+                display: block;
+                font-family: "굴림";
+                font-weight: bold;
+                font-size: 18px;
+                padding: 7px 8px;
+                margin: 0;
+                color: #fff;
+                margin: 0;
+                text-decoration: none;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            }
+            #nav li:hover > a{
+                background: #ffcab2;
+                color: black;
+                margin: 0;
+                padding: 5px;
+            }
+            #nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                width: 105px;
+                background: #ffcab2;
+                text-align: center;
+                opacity: 0;
+            }
+            #nav li:hover ul{
+                opacity: 1;
+            }
+            #nav li:hover ul li{
+                height: 35px;
+                overflow: visible;
+                padding: 0;
+            }
+            #nav ul li{
+                float: none;
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+            }
+            #nav ul a{
+                font-weight: normal;
+                color: black;
+            }
+            #nav ul li:hover > a{
+                background: #cc9882;
+                font-weight: bold;
+            }
+            .title{
+                text-align: center;
+            }
+            .title span{
+                font-size: 45px;
+                color: orange;
+                display: inline-block;
+            }
+            .scrollBar{
+                overflow:auto;
+                width:500px;
+                height:150px;
+            }
+            .introduction{
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -103,7 +198,8 @@
         <li><a href="Video.html">후추 영상</a></li>
         <li><a href="Other.html">기타</a>
             <ul>
-                <li><a href="#">게임</a></li>
+                <li><a href="Other.html">게임</a></li>
+                <li><a href="Other.html">PWA</a></li>
             </ul>
         </li>
     </ul>
@@ -113,12 +209,9 @@
         <br /><br /><br /><br /><br /><br />
         <strong>후추</strong>는 <a href="me.html" style="color: #ff00ff">내가</a> 키우는 고양이다.<br />
         후추는 엄청나게 귀엽다.<br />
-        지금 보이는 이 배경 이미지에 있는 고양이가 바로 후추다.<br />
+        지금 보이는 이 배경 이미지에 있는 <br />
+        고양이가 바로 후추다.<br />
         후추 짱<br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </p>
     <div class="scrollBar"></div>
 </body>

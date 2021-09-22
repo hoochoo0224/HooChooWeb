@@ -7,91 +7,203 @@
     <title>HooChoo</title>
 
     <style>
-        body{
-            background-image: url("후추4.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+        @import url("main.css") only screen and (min-width:200px) and (max-width:480px);
+    
+        @media (max-width: 767px){
+            body{
+                background-image: url("후추5.jpg");
+                background-repeat: no-repeat;
+                background-position: -10px 0px;
+                background-size: 450px;
+                background-color: #ddffff;
+            }
+            #nav{
+                list-style: none;
+                height: 30px;
+                padding: 5px 1px;
+                margin: 0;
+                background: #f29c74;
+            }
+            #nav li{
+                float: left;
+                position: relative;
+                margin: 1px 5px;
+                padding: 0;
+            }
+            #nav li a{
+                display: block;
+                font-family: "굴림";
+                font-weight: bold;
+                font-size: 11px;
+                padding: 7px 4px;
+                margin: 0;
+                color: #fff;
+                margin: 0;
+                text-decoration: none;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            }
+            #nav li:hover > a{
+                background: #ffcab2;
+                color: black;
+                margin: 0;
+                padding: 5px;
+            }
+            #nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                width: 105px;
+                background: #ffcab2;
+                text-align: center;
+                opacity: 0;
+            }
+            #nav li:hover ul{
+                opacity: 1;
+            }
+            #nav li:hover ul li{
+                height: 35px;
+                overflow: visible;
+                padding: 0;
+            }
+            #nav ul li{
+                float: none;
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+            }
+            #nav ul a{
+                font-weight: normal;
+                color: black;
+            }
+            #nav ul li:hover > a{
+                background: #cc9882;
+                font-weight: bold;
+            }
+            .title{
+                    text-align: center;
+            }
+            .title span{
+                font-size: 45px;
+                color: orange;
+                display: inline-block;
+            }
+            .scrollBar{
+                overflow:auto;
+                width:500px;
+                height:150px;
+            }
+            .introduction{
+                text-align: center;
+            }
+            h2{
+                background: linear-gradient(to right, #A7A3FF,#FFA7A3, #671cc4, #5673bd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p{
+                background: linear-gradient(to right, #A7A3FF,#FFA7A3, #671cc4, #5673bd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
-        #nav{
-            list-style: none;
-            height: 40px;
-            padding: 5px 1px;
-            margin: 0;
-            background: #f29c74;
-        }
-        #nav li{
-            float: left;
-            position: relative;
-            margin: 5px 30px;
-            padding: 0;
-        }
-        #nav li a{
-            display: block;
-            font-family: "굴림";
-            font-weight: bold;
-            font-size: 18px;
-            padding: 7px 8px;
-            margin: 0;
-            color: #fff;
-            margin: 0;
-            text-decoration: none;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-        }
-        #nav li:hover > a{
-            background: #ffcab2;
-            color: black;
-            margin: 0;
-            padding: 5px;
-        }
-        #nav ul{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            left: 0;
-            top: 40px;
-            width: 105px;
-            background: #ffcab2;
-            text-align: center;
-            opacity: 0;
-        }
-        #nav li:hover ul{
-            opacity: 1;
-        }
-        #nav li:hover ul li{
-            height: 35px;
-            overflow: visible;
-            padding: 0;
-        }
-        #nav ul li{
-            float: none;
-            margin: 0;
-            padding: 0;
-            font-size: 10px;
-        }
-        #nav ul a{
-            font-weight: normal;
-            color: black;
-        }
-        #nav ul li:hover > a{
-            background: #cc9882;
-            font-weight: bold;
-        }
-        .title{
-            text-align: center;
-        }
-        .title span{
-            font-size: 45px;
-            color: orange;
-            display: inline-block;
-        }
-        .scrollBar{
-            overflow:auto;
-            width:500px;
-            height:150px;
-        }
-        .introduction{
-            text-align: center;
+
+        @media (min-width: 1200px) {
+            body{
+                background-image: url("후추4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #ddffff;
+            }
+            #nav{
+                list-style: none;
+                height: 40px;
+                padding: 5px 1px;
+                margin: 0;
+                background: #f29c74;
+            }
+            #nav li{
+                float: left;
+                position: relative;
+                margin: 5px 30px;
+                padding: 0;
+            }
+            #nav li a{
+                display: block;
+                font-family: "굴림";
+                font-weight: bold;
+                font-size: 18px;
+                padding: 7px 8px;
+                margin: 0;
+                color: #fff;
+                margin: 0;
+                text-decoration: none;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            }
+            #nav li:hover > a{
+                background: #ffcab2;
+                color: black;
+                margin: 0;
+                padding: 5px;
+            }
+            #nav ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                width: 105px;
+                background: #ffcab2;
+                text-align: center;
+                opacity: 0;
+            }
+            #nav li:hover ul{
+                opacity: 1;
+            }
+            #nav li:hover ul li{
+                height: 35px;
+                overflow: visible;
+                padding: 0;
+            }
+            #nav ul li{
+                float: none;
+                margin: 0;
+                padding: 0;
+                font-size: 10px;
+            }
+            #nav ul a{
+                font-weight: normal;
+                color: black;
+            }
+            #nav ul li:hover > a{
+                background: #cc9882;
+                font-weight: bold;
+            }
+            .title{
+                text-align: center;
+            }
+            .title span{
+                font-size: 45px;
+                color: orange;
+                display: inline-block;
+            }
+            .scrollBar{
+                overflow:auto;
+                width:500px;
+                height:150px;
+            }
+            .introduction{
+                text-align: center;
+            }
+            h2{
+                border: 5px solid #C9C9C9; padding: 0.3em 1em;border-radius: 2px;
+            }
+            p{
+                color: black;
+            }
         }
     </style>
 </head>
@@ -103,22 +215,37 @@
         <li><a href="Video.html">후추 영상</a></li>
         <li><a href="Other.html">기타</a>
             <ul>
-                <li><a href="#">게임</a></li>
+                <li><a href="Other.html">게임</a></li>
+                <li><a href="Other.html" onclick="Pwa()">PWA</a></li>
             </ul>
         </li>
     </ul>
 
+    <br />
     <h1 class="title"><span>게임</span></h1>
 
-    <p>
-        <br /><br /><br /><br /><br /><br />
-        <h2 style="color:gray">Jump</h2>
-        1인칭 시점으로 점프를 하면서 여러 스테이지를 깨볼 수 있는 게임이다
-        <br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </p>
+    <br />
+    <h2>1. Jump</h2>
+
+    <p>3D로 된 네모로 점프를 하면서 여러<br />
+    스테이지를 깨볼 수 있는 게임이다</p>
+
+    <br />
+    <h2>2. 몰라.</h2>
+    
+    <p>여러 선택지 중 한가지를<br />
+    잘 선택해야하는 2D 게임이다</p>
+    
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1 class="title"><span>PWA</span></h1>
+
     <div class="scrollBar"></div>
+
+    <script language="javascript">
+        function Pwa(){
+            function autoScrolling() { window.scrollTo(0,document.body.scrollHeight); }
+            setInterval(autoScrolling, 1000);
+        } 
+    </script>
 </body>
 </html>
